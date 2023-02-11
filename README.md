@@ -1,47 +1,52 @@
-# Pi Open Source (PiOS)
-To view a list of open source Pi applications and libraries navigate to the [PiOS App List](/list.md) 
+Project introduction
 
-To learn more about Pi Open Source and how to utilize it continue reading
+    PI store, we are committed to getting through PI offline consumption scenarios, and more than 600 merchants have settled in! You can visit the website https://pi-store.app We understand that we hope to get through the offline physical consumption scenario of pi and promote the circulation of pi in the real economy, so as to promote the real implementation of dispatch payment. Most of our businesses come from the settlement of high consensus dispatch friends with physical stores. Users can get the nearest service merchants to purchase goods and services according to the location. After purchasing, a QR code will be generated, and then the QR code will be displayed according to the navigation to the address of the merchants, The merchant can complete the order after scanning the code!
 
-## The License
-The Pi Open Source Software License allows [Pi Community](https://minepi.com) Developers to create open source applications and tools for the Pi Ecosystem and foster collaboration among Pi community developers. In contrast to the MIT license the PiOS license grants unrestricted use of the software only within the Pi Ecosystem. Developers are encouraged to use this license when developing a Pi App.
+The right to put goods on and off the shelves and pricing are completely determined by the merchants. We have provided a complete set of supporting programs, and we have developed a total of three systems. The user end is used to find businesses and place orders, the merchant end is used for businesses to view revenue, withdraw cash and write off user Ding Dandan, and the management end is used for platform management.
 
-## Creating a PiOS application 
+Project characteristics
 
-We are offering projects github hosting under the `pi-apps` organization so that projects can be found easily. To request your own repo follow the steps below:
+    The difference between us and other projects is that we are a multi-benefit project:
 
-### 1. Submit a PR to the PiOS App List 
-Create a PR on this repository adding your application's information to the [PiOS App List](/list.md) table. Follow the formatted row template given on that doc, and fill in the below information as incomplete submissions will be rejected.  
+      1. In order to encourage more merchants to join, we have joined the promoter system. As long as the merchants are invited to settle in, the promoter can get  commission for all user orders for goods purchased by this merchant in the future.
+
+      2. In order to encourage more users to use our products, we have joined the promotion system. As long as users bind to their superiors, the superior users can also get corresponding commissions for their consumption orders.
+
+      3. In order to activate user activity, we have set up a sign-in module. The points given by sign-in can be deducted from the corresponding payment amount for the purchase of goods. In the future, we will add more interactive games for the convenience of users.
+
+Project progress
+
+    Current project progress
+
+    All development has been completed, and the final debugging stage is in progress!
+
+System architecture
+
+    It uses the SpringCloud microservice architecture, the front-end uses Vue.js development, the database uses MySQL+MongoDB+Redis, and the deployment environment uses Kubernetes+docker deployment.
+
+    At present, the servers are deployed in four clusters of ECS, and will be dynamically expanded according to the actual usage.
+
+
+中文介绍：
+
+项目介绍:
+
+      PI商店,我们致力于打通PI线下消费场景,入驻商家已达600余家！您可以访问网址 https://pi-store.app 了解，我们希望打通pi的线下实体消费场景，促进pi在实体经济中的流通，以此促进派支付的真正落地，我们的大多数商家来自拥有实体店铺的高共识派友的入驻，用户根据定位获取最近的服务商家购买商品和服务,购买后会生成一个二维码，然后根据导航去到商家的地址出示二维码，商家扫码后即可完成订单！
+      商品上下架和定价权完全由商家制定，我们提供了完善的成套配套方案，我们一共开发了3个系统。分别是用户端用户用户查找商家、下单，商家端用于商家查看收益、提现和核销用户丁丹丹，管理端用于平台管理。
+ 
+项目特点:
+
+    我们与其他项目不同之处在于，我们是一个多方受益的项目
+
+        1、为了鼓励更多的商家加入，我们加入了推广人制度，只要邀请商家入驻，以后所有在此商家购买商品的用户订单该推广人都可以获得佣金。
+        2、为了鼓励更多的用户使用我们的产品，我们加入用于推广制度，只要用户绑定上级，该用户的消费订单，上级用户也可以获得相应的佣金。
+        3、为了激活用户活跃度，我们设置了签到模块，签到赠送的积分都可以抵扣购买商品相应的支付金额，后续我们会加入更多的互动玩法以方便用户使用。
+
+目前项目进度:
+  已全部开发完成，正在进行最后的调试阶段！
   
-Information necessary for the PR to be approved:
-- Category (If you need a new Category add it directly in the PR)
-- Title 
-  - Can be in the form of “App_Name for Pi”, “App_Name on Pi”, “App_Name”, but not in the form of “Pi App_Name” 
-  to avoid confusion with apps developed by the Pi Core Team
-  - You must include the following language in your code:  Pi, Pi Network and the Pi logo are trademarks of the Pi Community Company.
-- Description - Short description about what the application aims to achieve
-- Programming Languages + Framework to be used
-- Link to Pi Brainstorm project proposal (project name until feature is ready)
+系统架构:
+    使用SpringCloud微服务架构、前端使用Vue.js开发、数据库使用MySQL+MongoDB+Redis、部署环境使用Kubernetes+docker部署。
+    目前服务器使用云服务器4台集群部署，后续会根据实际使用情况进行动态扩容。
 
-Information NOT necessary for the PR to be approved:
-- Link To Repo - Core Team will fill this in upon PR approval
-- Link to Testnet App - Project admin to send new PR later when available
-- Link to Mainnet App - Project admin to send new PR later when available  
-
-### 2. Pi Core Team will approve PR and create repository
-We will approve your PR, create a repository under github.com/pi-apps and invite you as the admin of that repository. 
-
-The github user that submits the Pull Request to the PiOS Application Library table will be given admin privileges to this newly created repository. This will grant you full admin access to the repository to add additional team members, and perform any sensitive or destructive actions like managing security, moving or even deleting the repository.  
-
-Other Pi community developers can also contribute to the maintenance and improvement of the application and submit Pull Requests directly to the project. As the admin you will be responsible for responding to those PRs or you can delegate this responsibility to your team members. Even though the Pi Core Team is providing you access to the github.com/pi-apps namespace for convenience, it will not maintain your repository or application code. You are fully responsible for your code.
-
-In the future should you wish to remove your application from the Pi Open Source Library you will be able to do this by simply moving your project out and sending a PR to remove the link to your code from the list. As an admin of your repository you can move it or remove it anytime without the approval of the Pi Core Team.    
-
-### 3. Edit License in your application's code repository and start coding
-To add the license to your code follow the below steps:
-- Edit the Copyright line of the LICENSE file in your repo 
-
-Note: source of the PiOS license is also available here [https://github.com/pi-apps/PiOS/blob/main/LICENSE](https://github.com/pi-apps/PiOS/blob/main/LICENSE)
-
-#### Disclaimer
-This is just a suggested license to limit use of your Software to Pi Network applications.  Pi Network does not take any responsibility for the use of this license by you or others.  All developers should consult their own counsel to ensure the license meets their needs and are solely liable for all consequences arising from the use of the license. To be included in the PiOS app list you are required to use this license without alterations, aside from the copyright notice. If you make alterations or use a different license, you may still be eligible to be included in other lists that may be established at some later time by Pi Network. 
+ 
